@@ -9,5 +9,12 @@ This is a mock CI/CD pipeline using GitHub Actions to simulate deploying a stati
 - Simulates SSH deploy to EC2 (no real EC2 used)
 - Prints deployment steps to the GitHub Actions logs
 
-## 📁 Folder Structure
+
+github-actions-ci-cd-demo/
+├── .github/
+│   └── workflows/
+│       └── main.yml       <-- GitHub Actions pipeline
+├── app/
+│   └── index.html         <-- Dummy static website
+└── README.md              <-- Project explanation
 
