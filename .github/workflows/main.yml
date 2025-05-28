@@ -1,0 +1,27 @@
+name: CI/CD Pipeline Demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Simulate Build Step
+        run: echo "Building the app..."
+
+      - name: Simulate Deployment to EC2
+        run: |
+          echo "Connecting to EC2..."
+          echo "Deploying index.html to /var/www/html"
+          echo "Restarting nginx..."
+          echo "✅ Deployment complete (mock)"
+
+      - name: Notify
+        run: echo "🎉 CI/CD pipeline finished"
